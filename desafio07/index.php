@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-    $minimo = 1000;
+    $minimo = 1_620;
     $salario = $_GET['sal'] ?? 0;
      ?>
     <main>
@@ -27,7 +27,7 @@
             $tot = intdiv($salario,$minimo);
             $dif = $salario % $minimo;
 
-            echo "<p>Quem recebe um salario de R\$".number_format($salario,2,",",".")."ganha<strong>$tot salario minimos </strong> + R\$".number_format($dif,2,",",".").".</p>";
+            echo "<p>Quem recebe um salario de R\$".number_format($salario,2,",",".")." ganha <strong>$tot salario minimos </strong> + R\$".number_format($dif,2,",",".").".</p>";
 
          ?>
     </section>
